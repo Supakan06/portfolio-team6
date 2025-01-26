@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +10,11 @@
 </head>
 <body>
 <div id="navbar"></div>
-<div id="hero"></div>
+<div id="about"></div>
 <div id="skills"></div>
 <div id="footer"></div>
 <script>
-// ฟังก์ชันสำหรับโหลด component
+
 async function loadComponent(url, targetId) {
 try {
 const response = await fetch(url);
@@ -28,7 +27,7 @@ console.error(`Error loading ${url}:`, error);
 // โหลดทุก components
 document.addEventListener('DOMContentLoaded', () => {
 loadComponent('./components/navbar/index.html', 'navbar');
-loadComponent('./components/hero/index.html', 'hero');
+loadComponent('./components/about/index.html', 'about');
 loadComponent('./components/skills/index.html', 'skills');
 loadComponent('./components/footer/index.html', 'footer');
 });
