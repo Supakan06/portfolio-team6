@@ -2,70 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 flex items-center justify-center min-h-screen">
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
 
+  <!-- Container -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
     <!-- Left Section -->
-    <div class="w-full max-w-md md:w-1/2 bg-white p-8 md:p-16 rounded-lg shadow-lg">
-        <h1 class="text-red-700 text-4xl font-extrabold mb-6 text-center">Contact Information</h1>
-        <p class="text-gray-600 mb-6 text-center text-lg">Supakan Wiwasuk</p>
-        <div class="space-y-6">
-            <p class="text-gray-600 text-lg">
-                169 Long Had Bangsaen Road, Saensuk Subdistrict, Muang District, Chonburi Province 20131
-            </p>
+    <div class="bg-white p-6 md:p-12 rounded-lg shadow-lg">
+      <h1 class="text-red-700 text-3xl md:text-4xl font-extrabold mb-6 text-center">Contact Information</h1>
+      <p class="text-gray-600 mb-6 text-center text-lg md:text-xl">Supakan Wiwasuk</p>
+      <div class="space-y-6">
+        <p class="text-gray-600 text-lg md:text-xl">
+          169 Long Had Bangsaen Road, Saensuk Subdistrict, Muang District, Chonburi Province 20131
+        </p>
 
-            <p class="text-gray-600 text-lg">
-                064-018-xxxx
-            </p>
-            <p class="text-gray-600 text-lg">
-                66160033@go.buu.ac.th
-            </p>
-        </div>
+        <p class="text-gray-600 text-lg md:text-xl">
+          064-018-xxxx
+        </p>
+        <p class="text-gray-600 text-lg md:text-xl">
+          66160033@go.buu.ac.th
+        </p>
+      </div>
     </div>
 
     <!-- Form Section -->
-    <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg mt-8 md:mt-0">
-        <h1 class="text-red-700 text-3xl font-extrabold text-center mb-8">Contact Us</h1>
+    <div class="bg-white p-6 md:p-12 rounded-lg shadow-lg">
+      <h1 class="text-red-700 text-3xl md:text-4xl font-extrabold text-center mb-8">Contact Us</h1>
 
-        <!-- Form -->
-        <form action="#" method="POST" class="space-y-6">
-            <!-- Name Field -->
-            <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" id="name" name="name"
-                    class="mt-1 block w-full p-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="Enter your name" pattern="[A-Za-z ]+"
-                    title="Name should only contain letters and spaces" required />
-            </div>
+      <!-- Form -->
+      <form action="#" method="POST" class="space-y-6">
+        <!-- Name Field -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" name="name"
+            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Enter your name" pattern="[A-Za-z ]+" title="Name should only contain letters and spaces"
+            required />
+        </div>
 
-            <!-- Email Field -->
-            <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" id="email" name="email"
-                    class="mt-1 block w-full p-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="Enter your email" required />
-            </div>
+        <!-- Email Field -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" name="email"
+            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Enter your email" required />
+        </div>
 
-            <!-- Message Field -->
-            <div>
-                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                <textarea id="message" name="message" rows="6"
-                    class="mt-1 block w-full p-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="Write your message here" required></textarea>
-            </div>
+        <!-- Message Field -->
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea id="message" name="message" rows="6"
+            class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Write your message here" required></textarea>
+        </div>
 
-            <!-- Submit Button -->
-            <button type="submit"
-                class="w-full bg-green-400 text-white py-3 px-6 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
-                Submit
-            </button>
-        </form>
+        <!-- Submit Button -->
+        <button type="submit"
+          class="w-full bg-green-400 text-white py-3 px-6 rounded-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+          Submit
+        </button>
+      </form>
     </div>
+  </div>
 
 </body>
 
