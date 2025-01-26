@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <nav class="bg-white px-6 py-4 shadow">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <span class="ml-3 text-2xl font-bold text-gray-800">Portfolio</span>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <div class="hidden sm:flex space-x-6">
+        <a href="index.html" class="text-lg text-gray-800 hover:text-blue-600">Home</a>
+        <a href="about.html" class="text-lg text-gray-800 hover:text-blue-600">About</a>
+        <a href="projects.html" class="text-lg text-gray-800 hover:text-blue-600">Projects</a>
+        <a href="contact.html" class="text-lg text-gray-800 hover:text-blue-600">Contact</a>
+      </div>
+
+      <!-- Hamburger Button for Mobile -->
+      <button id="menuButton" class="text-3xl sm:hidden focus:outline-none">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <!-- Sidebar Menu -->
+  <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform -translate-x-full transition-transform duration-300">
+    <button id="closeSidebar" class="text-white text-3xl absolute top-4 right-4 focus:outline-none">×</button>
+    <div class="flex flex-col mt-16 space-y-6 px-6">
+      <a href="index.html" class="text-lg hover:text-blue-400">🏠 Home</a>
+      <a href="about.html" class="text-lg hover:text-blue-400">ℹ️ About</a>
+      <a href="projects.html" class="text-lg hover:text-blue-400">🗃️ Projects</a>
+      <a href="contact.html" class="text-lg hover:text-blue-400">📞Contact</a>
+    </div>
+  </div>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('closeSidebar');
+
+    menuButton.addEventListener('click', () => {
+      sidebar.classList.remove('-translate-x-full');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      sidebar.classList.add('-translate-x-full');
+    });
+  </script>
+</body>
+</html>
